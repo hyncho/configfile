@@ -1,0 +1,16 @@
+greeting: "안녕하세요"
+
+
+---
+spring:
+   profiles: dev
+greeting: "dev안녕하세요"
+
+
+
+---
+spring:
+   profiles: prod
+greeting: "prod안녕하세요"
+
+
