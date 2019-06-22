@@ -1,8 +1,3 @@
-server:
- port: 8087
-
-
-
 
 # Redis session=================================================================
 # Session store type.
@@ -26,7 +21,8 @@ server:
       timeout: 300m
   session:
     cookie:
-      max-age: 3000000      
+      max-age: 3000000    
+  port: 8087  
 
 ---
 spring:
