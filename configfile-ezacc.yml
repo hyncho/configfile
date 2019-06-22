@@ -1,5 +1,38 @@
-greeting: "안녕하세요"
+# Redis session=================================================================
+# Session store type.
+spring:
+  session:
+    store-type: redis
+    
+#server.servlet.session.timeout= # Session timeout. If a duration suffix is not specified, seconds is used.
+#spring.session.redis.flush-mode=on-save # Sessions flush mode.
+#spring.session.redis.namespace=spring:session # Namespace for keys used to store sessions.
 
+# Redis server host.
+spring:
+  redis:
+    host: 13.124.131.237
+
+#spring.redis.password= # Login password of the redis server.
+# Redis server port.
+spring:
+  redis:
+    port: 6380
+
+
+server:
+  servlet:
+    session:
+      timeout: 300m
+      
+spring:
+  session:
+    timeout: 3000000
+    
+server:
+  session:
+    cookie:
+      max-age: 3000000
 
 ---
 spring:
@@ -8,8 +41,6 @@ spring:
 spring:
   datasource:
     url: jdbc:log4jdbc:oracle:thin:@127.0.0.1:1522:xe
-
-
 
 ---
 spring:
