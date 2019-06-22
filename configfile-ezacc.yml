@@ -4,13 +4,20 @@ greeting: "안녕하세요"
 ---
 spring:
    profiles: dev
-greeting: "dev안녕하세요"
+   
+spring:
+  datasource:
+    url: jdbc:log4jdbc:oracle:thin:@127.0.0.1:1522:xe
 
 
 
 ---
 spring:
    profiles: prod
-greeting: "prod안녕하세요"
+   
+spring:
+  datasource:
+    url: jdbc:log4jdbc:oracle:thin:@xe-aws.c5s7gftnkiej.ap-northeast-2.rds.amazonaws.com:1521:xe
+
 
 
