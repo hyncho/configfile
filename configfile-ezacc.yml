@@ -34,7 +34,7 @@ spring:
 spring:
    profiles: prod
    datasource:
-    url: "jdbc:log4jdbc:oracle:thin:@xe-aws.c5s7gftnkiej.ap-northeast-2.rds.amazonaws.com:1521:xe"
+    url: jdbc:log4jdbc:oracle:thin:@xe-aws.c5s7gftnkiej.ap-northeast-2.rds.amazonaws.com:1521:xe
     
 
 
