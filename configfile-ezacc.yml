@@ -9,8 +9,8 @@
 # Redis server port.
 spring:
   redis:
-    host: 13.124.131.237
-    port: 6380
+    host: 35.229.221.36
+    port: 6379
   session:
     store-type: redis
     timeout: 3000000
