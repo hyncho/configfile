@@ -9,7 +9,7 @@
 # Redis server port.
 spring:
   redis:
-    host: 35.229.221.36
+    host: 35.201.158.145
     port: 6379
   session:
     store-type: redis
