@@ -6,7 +6,7 @@
 #spring.session.redis.namespace=spring:session # Namespace for keys used to store sessions.
 # Redis server host.
 #spring.redis.password= # Login password of the redis server.
-# Redis server port.
+# Redis server port. 
 spring:
   redis:
     host: 35.201.158.145
