@@ -36,8 +36,8 @@ spring:
   profiles: dev
   datasource:
         url: jdbc:mariadb://localhost:3306/XE
-        username: ECSVC
-        password: ECSVC
+        username: EXPS
+        password: EXPS
         driver-class-name: org.mariadb.jdbc.Driver 
     
 ---
