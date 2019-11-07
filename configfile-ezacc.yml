@@ -35,16 +35,15 @@ spring:
 spring:
   profiles: dev
   datasource:
-        url: jdbc:mariadb://localhost:3306/XE;allowMultiQueries=true
+        url: jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
         username: EXPS
         password: EXPS
         driver-class-name: org.mariadb.jdbc.Driver 
-    
 ---
 spring:
    profiles: prod
    datasource:
-    url: jdbc:log4jdbc:oracle:thin:@xe-aws.c5s7gftnkiej.ap-northeast-2.rds.amazonaws.com:1521:xe;allowMultiQueries=true
+    url: jdbc:log4jdbc:oracle:thin:@xe-aws.c5s7gftnkiej.ap-northeast-2.rds.amazonaws.com:1521:xe?allowMultiQueries=true
 
 
 
