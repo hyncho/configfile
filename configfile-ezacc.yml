@@ -43,7 +43,6 @@ spring:
    redis:
         host: host.docker.internal
         port: 30079
-        password: 2324
    session:
         store-type: redis
         timeout: 3000000
