@@ -42,7 +42,7 @@ spring:
         driver-class-name: org.mariadb.jdbc.Driver
    redis:
         host: localhost
-        port: 6379
+        port: 30079
         password: 2324
    session:
         store-type: redis
