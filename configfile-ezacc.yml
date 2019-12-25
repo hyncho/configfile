@@ -1,4 +1,4 @@
-
+# yml은 indentation이 정확해야 함.(들어쓰는 칸 수가 같은 레벨에서는 무조건  같아야함.)
 # Redis session=================================================================
 # Session store type.
 #server.servlet.session.timeout= # Session timeout. If a duration suffix is not specified, seconds is used.
@@ -36,7 +36,7 @@ spring:
 spring:
    profiles: prod
    datasource:
-        url: jdbc:mariadb://10.99.206.27:3306/XE?allowMultiQueries=true
+        url: jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
         username: EXPS
         password: EXPS
         driver-class-name: org.mariadb.jdbc.Driver
