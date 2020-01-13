@@ -36,7 +36,7 @@ spring:
 spring:
   profiles: drod
   datasource:
-        url: jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
+        url: jdbc:mariadb://192.168.0.183:3306/XE?allowMultiQueries=true
         username: EXPS
         password: EXPS
         driver-class-name: org.mariadb.jdbc.Driver
