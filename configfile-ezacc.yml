@@ -32,6 +32,21 @@ spring:
     store-type: redis
     timeout: 3000000
 
+---    
+spring:
+  profiles: drod
+  datasource:
+        url: jdbc:mariadb://192.168.0.183:3306/XE?allowMultiQueries=true
+        username: EXPS
+        password: EXPS
+        driver-class-name: org.mariadb.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+  session:
+    store-type: redis
+    timeout: 3000000
+
 ---
 spring:
    profiles: prod
