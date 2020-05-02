@@ -21,10 +21,10 @@ server:
 spring:
   profiles: dev
   datasource:
-        url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
+        url: jdbc:log4jdbc:mariadb://localhost:3306/XE
         username: EXPS
         password: EXPS
-        driver-class-name: org.mariadb.jdbc.Driver
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
   redis:
     host: localhost
     port: 6379
