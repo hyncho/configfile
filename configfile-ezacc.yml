@@ -50,7 +50,7 @@ spring:
     store-type: redis
     timeout: 3000000
 file:
-   upload-dir: c:/temp
+   upload-dir: /data
    
 ---
 spring:
