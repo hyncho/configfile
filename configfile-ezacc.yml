@@ -62,7 +62,7 @@ spring:
         driver-class-name: org.mariadb.jdbc.Driver
    redis:
         host: localhost
-        port: 30079
+        port: 6379
    session:
         store-type: redis
         timeout: 3000000
