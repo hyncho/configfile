@@ -61,7 +61,7 @@ spring:
         password: EXPS
         driver-class-name: org.mariadb.jdbc.Driver
    redis:
-        host: localhost
+        host: host.docker.internal
         port: 6379
    session:
         store-type: redis
