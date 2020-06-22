@@ -30,13 +30,12 @@ spring:
     port: 6379
   session:
     store-type: redis
-    timeout: 14s
+    timeout: 1m
     redis:
      flush-mode: on-save
      namespace: spring:session
 file:
    upload-dir: c:/temp
-
 
 ---    
 spring:
