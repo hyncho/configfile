@@ -8,14 +8,6 @@
 #spring.redis.password= # Login password of the redis server.
 # Redis server port. 34.80.117.164  35.229.221.36  
 
-server:
-  servlet:
-    session:
-      timeout: 300m
-  session:
-    cookie:
-      max-age: 3000000
-  port: 8087
 
 ---    
 spring:
