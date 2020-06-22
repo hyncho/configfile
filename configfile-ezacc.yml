@@ -30,7 +30,7 @@ spring:
     port: 6379
   session:
     store-type: redis
-    timeout: 3000000
+    timeout: 15000
 file:
    upload-dir: c:/temp
 
@@ -65,7 +65,7 @@ spring:
         port: 6379
    session:
         store-type: redis
-        timeout: 3000000
+        timeout: 60m
 file:
    upload-dir: /data
 
