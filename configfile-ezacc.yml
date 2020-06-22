@@ -6,7 +6,7 @@
 #spring.session.redis.namespace=spring:session # Namespace for keys used to store sessions.
 # Redis server host.
 #spring.redis.password= # Login password of the redis server.
-# Redis server port. 34.80.117.164  35.229.221.36 
+# Redis server port. 34.80.117.164  35.229.221.36  
 
 server:
   servlet:
@@ -30,7 +30,7 @@ spring:
     port: 6379
   session:
     store-type: redis
-    timeout: 14000
+    timeout: 14
 file:
    upload-dir: c:/temp
 
