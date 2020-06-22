@@ -31,6 +31,9 @@ spring:
   session:
     store-type: redis
     timeout: 14
+    redis:
+     flush-mode: on-save
+     namespace: spring:session
 file:
    upload-dir: c:/temp
 
