@@ -24,7 +24,7 @@ spring:
     port: 6379
   session:
     store-type: redis
-    timeout: 60s
+    timeout: 60m
     redis:
      flush-mode: on-save
      namespace: spring:session
