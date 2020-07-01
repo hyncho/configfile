@@ -66,4 +66,21 @@ spring:
 file:
    upload-dir: /data
 
+---
+spring:
+   profiles: arod
+   datasource:
+        url: jdbc:mariadb://xe.cwe3sizdhhur.ap-northeast-2.rds.amazonaws.com:3306/XE?allowMultiQueries=true
+        username: EXPS
+        password: EXPS
+        driver-class-name: org.mariadb.jdbc.Driver
+   redis:
+        host: redis.fyswdx.ng.0001.apn2.cache.amazonaws.com
+        port: 6379
+   session:
+        store-type: redis
+        timeout: 3600
+file:
+   upload-dir: /data
+
 
