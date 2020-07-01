@@ -34,6 +34,23 @@ file:
 
 ---    
 spring:
+  profiles: erod
+  datasource:
+        url: jdbc:log4jdbc:mariadb://xe.cwe3sizdhhur.ap-northeast-2.rds.amazonaws.com:3306/XE?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&allowMultiQueries=true
+        username: EXPS
+        password: EXPS
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy        
+  redis:
+    host: localhost
+    port: 6379
+  session:
+    store-type: redis
+    timeout: 3000000
+file:
+   upload-dir: c:/temp
+   
+---    
+spring:
   profiles: drod
   datasource:
         url: jdbc:log4jdbc:mariadb://192.168.0.183:3306/XE?allowMultiQueries=true
