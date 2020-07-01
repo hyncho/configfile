@@ -36,7 +36,7 @@ file:
 spring:
   profiles: erod
   datasource:
-        url: jdbc:log4jdbc:mariadb://xe.cwe3sizdhhur.ap-northeast-2.rds.amazonaws.com:3306/XE?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&allowMultiQueries=true
+        url: jdbc:log4jdbc:mariadb://xe.cwe3sizdhhur.ap-northeast-2.rds.amazonaws.com:3306/XE?allowMultiQueries=true
         username: EXPS
         password: EXPS
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy        
@@ -87,7 +87,7 @@ file:
 spring:
    profiles: arod
    datasource:
-        url: jdbc:mariadb://xe.cwe3sizdhhur.ap-northeast-2.rds.amazonaws.com:3306/XE?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&allowMultiQueries=true
+        url: jdbc:mariadb://xe.cwe3sizdhhur.ap-northeast-2.rds.amazonaws.com:3306/XE?allowMultiQueries=true
         username: EXPS
         password: EXPS
         driver-class-name: org.mariadb.jdbc.Driver
