@@ -75,7 +75,7 @@ spring:
         password: EXPS
         driver-class-name: org.mariadb.jdbc.Driver
    redis:
-        host: redis.fyswdx.ng.0001.apn2.cache.amazonaws.com
+        host: redis-001.fyswdx.0001.apn2.cache.amazonaws.com
         port: 6379
    session:
         store-type: redis
