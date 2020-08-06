@@ -18,7 +18,7 @@ spring:
   datasource:
         url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
-        password: ENC(Im07y0jhKPctYoktgFS/Eg==x)   
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
   redis:
     host: localhost
