@@ -9,8 +9,6 @@
 # Redis server port. 34.80.117.164  35.229.221.36  gustlf
 # timeout 단위를 명시 안했을 때는 초단위 60 == 60s == 1m, 1h, 톰캣의 최소단위 분단위 1s => 1m(실제로는 최대 3분) , was에 따라 다름 
 
-server:
-  port: 8087
 
 ---    
 spring:
@@ -28,8 +26,28 @@ spring:
     timeout: 2000000
 file:
    upload-dir: c:/temp
-
+server:
+  port: 8087  
 ---    
+spring:
+  profiles: dev_kafka
+  datasource:
+        url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
+        username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+  redis:
+    host: localhost
+    port: 6379
+  session:
+    store-type: redis
+    timeout: 2000000
+file:
+   upload-dir: c:/temp
+server:
+  port: 8089
+
+---
 spring:
   profiles: erod
   datasource:
@@ -45,7 +63,8 @@ spring:
     timeout: 3000000
 file:
    upload-dir: c:/temp
-   
+server:
+  port: 8087     
 ---    
 spring:
   profiles: drod
@@ -62,7 +81,8 @@ spring:
     timeout: 3000000
 file:
    upload-dir: c:/temp
-   
+server:
+  port: 8087     
 ---
 spring:
    profiles: prod
@@ -79,7 +99,8 @@ spring:
         timeout: 4200
 file:
    upload-dir: /data
-
+server:
+  port: 8087  
 ---
 spring:
    profiles: arod
@@ -96,5 +117,6 @@ spring:
         timeout: 3600
 file:
    upload-dir: /data
-
+server:
+  port: 8087  
 
