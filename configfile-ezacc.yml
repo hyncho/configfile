@@ -30,7 +30,7 @@ server:
   port: 8087
 ---
 spring:
-  profiles: devkafka
+  profiles: devk
   datasource:
         url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
