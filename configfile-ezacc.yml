@@ -9,7 +9,9 @@
 # Redis server port. 34.80.117.164  35.229.221.36  gustlf
 # timeout 단위를 명시 안했을 때는 초단위 60 == 60s == 1m, 1h, 톰캣의 최소단위 분단위 1s => 1m(실제로는 최대 3분) , was에 따라 다름 
 
-
+server:
+  port: 8087  
+---
 spring:
   profiles: dev
   datasource:
@@ -25,8 +27,6 @@ spring:
     timeout: 2000000
 file:
    upload-dir: c:/temp
-server:
-  port: 8087  
 ---    
 spring:
   profiles: dev_kafka
