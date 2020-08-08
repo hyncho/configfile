@@ -51,8 +51,8 @@ spring:
   profiles: erod
   datasource:
         url: jdbc:log4jdbc:mariadb://xe.cwe3sizdhhur.ap-northeast-2.rds.amazonaws.com:3306/XE?allowMultiQueries=true
-        username: EXPS
-        password: EXPS
+        username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy        
   redis:
     host: localhost
@@ -69,8 +69,8 @@ spring:
   profiles: drod
   datasource:
         url: jdbc:log4jdbc:mariadb://192.168.0.183:3306/XE?allowMultiQueries=true
-        username: EXPS
-        password: EXPS
+        username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy        
   redis:
     host: localhost
@@ -87,8 +87,8 @@ spring:
    profiles: prod
    datasource:
         url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
-        username: EXPS
-        password: EXPS
+        username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
         driver-class-name: org.mariadb.jdbc.Driver
    redis:
         host: host.docker.internal
@@ -102,11 +102,29 @@ server:
   port: 8087  
 ---
 spring:
+   profiles: prodkafka
+   datasource:
+        url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
+        username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        driver-class-name: org.mariadb.jdbc.Driver
+   redis:
+        host: host.docker.internal
+        port: 6379
+   session:
+        store-type: redis
+        timeout: 4200
+file:
+   upload-dir: /data
+server:
+  port: 8089
+---
+spring:
    profiles: arod
    datasource:
         url: jdbc:mariadb://xe.cwe3sizdhhur.ap-northeast-2.rds.amazonaws.com:3306/XE?allowMultiQueries=true
-        username: EXPS
-        password: EXPS
+        username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
         driver-class-name: org.mariadb.jdbc.Driver
    redis:
         host: 172.31.0.64
