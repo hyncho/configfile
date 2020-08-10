@@ -13,8 +13,8 @@
 spring:
   profiles: dev1
   session:
-        store-type: redis
-        timeout: 20000
+      store-type: redis
+      timeout: 20000
   datasource:
       firstdb:
         jdbc-url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
