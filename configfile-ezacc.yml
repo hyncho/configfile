@@ -12,6 +12,9 @@
 ---
 spring:
   profiles: dev1
+  session:
+      store-type: redis
+      timeout: 2000000  
   firstdb:
      datasource:
         jdbc-url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
@@ -29,9 +32,6 @@ spring:
   redis:
       host: localhost
       port: 6379
-  session:
-      store-type: redis
-      timeout: 2000000
 file:
    upload-dir: c:/temp
 server:
