@@ -21,7 +21,7 @@ spring:
         profile-sql: true  
      session:
         store-type: redis
-        timeout: 2000000          
+        timeout: 20000          
   seconddb:
       datasource:
         jdbc-url: jdbc:log4jdbc:mariadb://localhost:3306/XE_TEMP?allowMultiQueries=true
