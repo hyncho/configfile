@@ -9,7 +9,7 @@
 # Redis server port. 34.80.117.164  35.229.221.36  gustlf
 # timeout �떒�쐞瑜� 紐낆떆 �븞�뻽�쓣 �븣�뒗 珥덈떒�쐞 60 == 60s == 1m, 1h, �넱罹ｌ쓽 理쒖냼�떒�쐞 遺꾨떒�쐞 1s => 1m(�떎�젣濡쒕뒗 理쒕� 3遺�) , was�뿉 �뵲�씪 �떎由�  //
 
----
+
 spring:
   profiles: dev1
   session:
