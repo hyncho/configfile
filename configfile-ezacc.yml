@@ -15,7 +15,7 @@ spring:
   profiles: dev
   session:
     store-type: redis
-    timeout: 2000000      
+    timeout: 5000000      
   datasource:
       firstdb:
         jdbc-url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
@@ -106,6 +106,30 @@ file:
    upload-dir: /data
 server:
   port: 8087  
+---
+spring:
+  profiles: prod1
+  session:
+    store-type: redis
+    timeout: 3000000      
+  datasource:
+      firstdb:
+        jdbc-url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
+        username: ENC(Im07y0jhKPctYoktgFS/Eg==)
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)
+        driver-class-name: org.mariadb.jdbc.Driver
+      seconddb:
+        jdbc-url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
+        username: ENC(Im07y0jhKPctYoktgFS/Eg==)
+        password: ENC(Im07y0jhKPctYoktgFS/Eg==)
+        driver-class-name: org.mariadb.jdbc.Driver
+  redis:
+        host: host.docker.internal
+        port: 6379
+file:
+   upload-dir: /data
+server:
+  port: 8087
 ---
 spring:
    profiles: prodkafka
