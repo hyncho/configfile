@@ -34,16 +34,7 @@ file:
    upload-dir: c:/temp
 server:
   port: 8087   
-   
-# server:
-#   port: 443
-#   ssl:
-#     key-store: classpath:eframework.p12
-#     key-store-password: hch@2324
-#     key-store-type: PKCS12
-#     key-alias: eframework
-    
-    
+
 ---
 spring:
   profiles: devkafka
