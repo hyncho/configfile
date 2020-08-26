@@ -94,12 +94,7 @@ spring:
 file:
    upload-dir: c:/temp
 server:
-  port: 443
-  ssl:
-    key-store: classpath:eframework.p12
-    key-store-password: hch@2324
-    key-store-type: PKCS12
-    key-alias: eframework  
+  port: 8087   
 ---
 spring:
    profiles: prodxxx
