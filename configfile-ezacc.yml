@@ -45,7 +45,7 @@ spring:
         jdbc-url: jdbc:oracle:thin:@localhost:1521/xe 
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
         password: ENC(Im07y0jhKPctYoktgFS/Eg==)
-        driver-class-name: oracle.jdbc.driver.OracleDriver
+        driver-class-name: oracle.jdbc.OracleDriver
       seconddb:
         jdbc-url: jdbc:oracle:thin:@localhost:1521/xe
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
