@@ -42,8 +42,8 @@ spring:
     timeout: 84000      
   datasource:
         url: jdbc:oracle:thin:@localhost:1521/xe
-        username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
-        password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
+        username: ECSVC 
+        password: ECSVC
         driver-class-name: oracle.jdbc.OracleDriver
   redis:
       host: localhost
