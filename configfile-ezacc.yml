@@ -41,7 +41,7 @@ spring:
     store-type: redis
     timeout: 84000      
   datasource:
-        url: jdbc:oracle:thin:@localhost:1521/xe
+        url: jdbc:oracle:thin:@localhost:1521/xe?allowMultiQueries=true
         username: ECSVC 
         password: ECSVC
         driver-class-name: oracle.jdbc.OracleDriver
