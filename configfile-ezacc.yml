@@ -44,7 +44,7 @@ spring:
       firstdb:
         jdbc-url: jdbc:log4jdbc:oracle:thin:@192.168.8.154:1521/ENPRANI
         username: DBMGR1
-        password: DBMGR1
+        password: invigor
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       seconddb:
         jdbc-url: jdbc:log4jdbc:oracle:thin:@localhost:1521/xe
