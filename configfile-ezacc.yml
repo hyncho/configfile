@@ -50,7 +50,7 @@ spring:
         jdbc-url: jdbc:sqlserver://192.168.8.150:1433;databaseName=SBO_ENP
         username: sa
         password: saroot
-        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   redis:
       host: localhost
       port: 6379
