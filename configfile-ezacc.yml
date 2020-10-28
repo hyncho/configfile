@@ -47,9 +47,9 @@ spring:
         password: invigor
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       seconddb:
-        jdbc-url: jdbc:log4jdbc:oracle:thin:@localhost:1521/xe
-        username: ECSVC
-        password: ECSVC
+        jdbc-url: jdbc:sqlserver://192.168.8.150;databaseName=SBO_ENP
+        username: sa
+        password: saroot
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
   redis:
       host: localhost
