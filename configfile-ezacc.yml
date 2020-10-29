@@ -162,10 +162,10 @@ spring:
     timeout: 4200      
   datasource:
       firstdb:
-        jdbc-url: jdbc:log4jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
+        jdbc-url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
         password: ENC(Im07y0jhKPctYoktgFS/Eg==)
-        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+        driver-class-name: org.mariadb.jdbc.Driver
       seconddb:
         jdbc-url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
