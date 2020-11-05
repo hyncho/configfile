@@ -45,7 +45,7 @@ spring:
         jdbc-url: jdbc:oracle:thin:@192.168.8.151:1521/ENPRANI
         username: DBMGR1
         password: invigor
-        driver-class-name: oracle.jdbc.pool.OracleDataSource
+        driver-class-name: oracle.jdbc.driver.OracleDriver
       seconddb:
         jdbc-url: jdbc:log4jdbc:sqlserver://192.168.8.150:1433;databaseName=SBO_ENP
         username: sa
