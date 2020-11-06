@@ -36,7 +36,7 @@ server:
   port: 8087   
 ---
 spring:
-  profiles: kev
+  profiles: kov
   session:
     store-type: redis
     timeout: 84000      
@@ -60,7 +60,7 @@ server:
   port: 8088
 ---
 spring:
-  profiles: kov
+  profiles: kev
   session:
     store-type: redis
     timeout: 84000      
