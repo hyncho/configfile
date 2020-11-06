@@ -36,6 +36,30 @@ server:
   port: 8087   
 ---
 spring:
+  profiles: kov
+  session:
+    store-type: redis
+    timeout: 84000      
+  datasource:
+      firstdb:
+        jdbc-url: jdbc:oracle:thin:@192.168.8.151:1521/ENPRANI 
+        username: DBMGR1
+        password: invigor
+        driver-class-name: oracle.jdbc.OracleDriver
+      seconddb:
+        jdbc-url: jdbc:log4jdbc:sqlserver://192.168.8.150:1433;databaseName=SBO_ENP
+        username: sa
+        password: saroot
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+  redis:
+      host: localhost
+      port: 6379
+file:
+   upload-dir: c:/temp
+server:
+  port: 8088
+---
+spring:
   profiles: kev
   session:
     store-type: redis
@@ -57,7 +81,7 @@ spring:
 file:
    upload-dir: c:/temp
 server:
-  port: 8088
+  port: 8088  
 ---
 spring:
   profiles: qrod
