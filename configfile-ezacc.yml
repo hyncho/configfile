@@ -18,7 +18,7 @@ spring:
     timeout: 84000
   datasource:
       firstdb:
-        jdbc-url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
+        jdbc-url: jdbc:log4jdbc:mariadb://localhost:3306/xe?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
         password: ENC(Im07y0jhKPctYoktgFS/Eg==)
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
@@ -168,12 +168,12 @@ spring:
     timeout: 84000      
   datasource:
       firstdb:
-        jdbc-url: jdbc:log4jdbc:mariadb://192.168.0.183:3306/XE?allowMultiQueries=true
+        jdbc-url: jdbc:log4jdbc:mariadb://192.168.0.183:3306/xe?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
         password: ENC(Im07y0jhKPctYoktgFS/Eg==)
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       seconddb:
-        jdbc-url: jdbc:log4jdbc:mariadb://192.168.0.183:3306/XE?allowMultiQueries=true
+        jdbc-url: jdbc:log4jdbc:mariadb://192.168.0.183:3306/xe?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
         password: ENC(Im07y0jhKPctYoktgFS/Eg==)
         driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
@@ -210,12 +210,12 @@ spring:
     timeout: 4200      
   datasource:
       firstdb:
-        jdbc-url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
+        jdbc-url: jdbc:mariadb://host.docker.internal:3306/xe?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
         password: ENC(Im07y0jhKPctYoktgFS/Eg==)
         driver-class-name: org.mariadb.jdbc.Driver
       seconddb:
-        jdbc-url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
+        jdbc-url: jdbc:mariadb://host.docker.internal:3306/xe?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)
         password: ENC(Im07y0jhKPctYoktgFS/Eg==)
         driver-class-name: org.mariadb.jdbc.Driver
@@ -230,7 +230,7 @@ server:
 spring:
    profiles: prodkafka
    datasource:
-        url: jdbc:mariadb://host.docker.internal:3306/XE?allowMultiQueries=true
+        url: jdbc:mariadb://host.docker.internal:3306/xe?allowMultiQueries=true
         username: ENC(Im07y0jhKPctYoktgFS/Eg==)   
         password: ENC(Im07y0jhKPctYoktgFS/Eg==)   
         driver-class-name: org.mariadb.jdbc.Driver
