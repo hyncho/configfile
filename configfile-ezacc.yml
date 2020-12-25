@@ -81,7 +81,7 @@ spring:
 file:
    upload-dir: c:/temp
 server:
-  port: 8088  
+  port: 8088
 ---
 spring:
   profiles: krod
