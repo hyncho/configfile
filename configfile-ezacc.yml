@@ -42,10 +42,10 @@ spring:
     timeout: 84000      
   datasource:
       firstdb:
-        jdbc-url: jdbc:oracle:thin:@192.168.8.151:1521/ENPRANI 
+        jdbc-url: jdbc:log4jdbc:oracle:thin:@192.168.8.151:1521/ENPRANI
         username: DBMGR1
         password: invigor
-        driver-class-name: oracle.jdbc.OracleDriver
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
       seconddb:
         jdbc-url: jdbc:log4jdbc:sqlserver://192.168.8.150:1433;databaseName=SBO_ENP
         username: sa
