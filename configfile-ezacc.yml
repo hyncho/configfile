@@ -108,24 +108,6 @@ server:
   port: 8088  
 ---
 spring:
-  profiles: qrod
-  session:
-    store-type: redis
-    timeout: 84000      
-  datasource:
-        url: jdbc:oracle:thin:@localhost:1521/xe
-        username: ECSVC 
-        password: ECSVC
-        driver-class-name: oracle.jdbc.OracleDriver
-  redis:
-      host: localhost
-      port: 6379
-file:
-   upload-dir: c:/temp
-server:
-  port: 8088
----
-spring:
   profiles: devkafka
   datasource:
         url: jdbc:log4jdbc:mariadb://localhost:3306/XE?allowMultiQueries=true
