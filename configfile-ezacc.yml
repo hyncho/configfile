@@ -15,8 +15,8 @@ spring:
   profiles: dev
   session:
     store-type: redis
- #   timeout: 84000
-    timeout: 900
+    timeout: 84000
+ #   timeout: 900
   datasource:
       firstdb:
         jdbc-url: jdbc:log4jdbc:mariadb://demo.e-accounting.co.kr:3307/xe?allowMultiQueries=true
