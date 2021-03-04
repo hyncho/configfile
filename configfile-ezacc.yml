@@ -172,9 +172,9 @@ spring:
   profiles: prod
   session:
     store-type: redis
-#    timeout: 4200    
+    timeout: 4200    
 #    timeout: 2000   
-    timeout: 2000
+#    timeout: 2000
   datasource:
       firstdb:
         jdbc-url: jdbc:mariadb://host.docker.internal:3306/xe1?allowMultiQueries=true
