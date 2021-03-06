@@ -148,7 +148,7 @@ spring:
   profiles: drod
   session:
     store-type: redis
-    timeout: 1300    
+    timeout: 900    
   datasource:
       firstdb:
         jdbc-url: jdbc:log4jdbc:mariadb://demo.e-accounting.co.kr:3306/xe1?allowMultiQueries=true
