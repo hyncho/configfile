@@ -13,6 +13,8 @@
 ---
 spring:
   profiles: dev
+  websocket:
+    schedule: 5000
   session:
     store-type: redis
     timeout: 84000
@@ -146,6 +148,8 @@ server:
 ---    
 spring:
   profiles: drod
+  websocket:
+    schedule: 5000
   session:
     store-type: redis
     timeout: 9000
@@ -170,6 +174,8 @@ server:
 ---
 spring:
   profiles: prod
+  websocket:
+    schedule: 5000
   session:
     store-type: redis
 #    timeout: 4200
