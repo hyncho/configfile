@@ -149,7 +149,7 @@ server:
 spring:
   profiles: drod
   websocket:
-    schedule: 5000
+    schedule: 50000000
   session:
     store-type: redis
     timeout: 9000
