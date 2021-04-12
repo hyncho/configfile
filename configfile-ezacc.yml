@@ -17,7 +17,7 @@ spring:
     schedule: 50000000
   session:
     store-type: redis
-    timeout: 84000
+    timeout: 840000
  #   timeout: 900
   datasource:
       firstdb:
@@ -179,7 +179,7 @@ spring:
   session:
     store-type: redis
 #    timeout: 4200
-    timeout: 84000    
+    timeout: 840000
 #    timeout: 900   
 #    timeout: 2000
   datasource:
