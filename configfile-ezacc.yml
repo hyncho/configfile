@@ -178,8 +178,8 @@ spring:
     schedule: 5000
   session:
     store-type: redis
-#    timeout: 4200
-    timeout: 840000
+    timeout: 4200
+#    timeout: 840000
 #    timeout: 900   
 #    timeout: 2000
   datasource:
