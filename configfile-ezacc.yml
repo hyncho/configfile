@@ -175,7 +175,7 @@ server:
 spring:
   profiles: prod
   websocket:
-    schedule: 5000
+    schedule: 5000000
   session:
     store-type: redis
     timeout: 4200
